@@ -4,9 +4,12 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Courses from "./Pages/Courses";
 import Achievements from "./Pages/Achievements";
+import Navbar from "./Components/Navbar";
 
 const App = () => {
+
   const router = createBrowserRouter(
+   
     [
       {
         path: "/",
@@ -29,7 +32,7 @@ const App = () => {
       basename: "/",
     }
   );
-  return <RouterProvider router={router} />;
+  return   <RouterProvider   router={router} />;
 };
 
 export default App;

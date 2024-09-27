@@ -21,3 +21,27 @@ h3,
 h4 , button {
   font-family: "Space Grotesk", sans-serif;
 }
+
+
+/* Navbar.css */
+.nav-link {
+  position: relative; /* Make the link a positioning context */
+  display: inline-block; /* To allow positioning of the ::after pseudo-element */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Start from the center */
+  bottom: 0;
+  top: 100%; /* Position at the bottom */
+  width: 0; /* Initial width is 0 */
+  height: 2px; /* Height of the border */
+  background-color: #301d5b; /* Change to your desired color */
+  transition: width 0.3s ease, left 0.3s ease; /* Animate width and position */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expand to full width on hover */
+  left: 0; /* Move to the left */
+}
