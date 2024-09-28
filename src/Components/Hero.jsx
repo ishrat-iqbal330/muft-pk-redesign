@@ -9,18 +9,41 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[url('/doted-bg.jpg')] bg-cover bg-no-repeat opacity-20" />
 
         <Navbar />
-        <div className="relative z-10 mt-40 mx-auto">
-          <div className=" flex flex-col items-center justify-center text-center w-full  ">
+        <div className="relative mt-24 mx-auto w-full h-[800px] flex flex-col items-center justify-center text-center">
+          {" "}
+          <img
+            src="/banner.png"
+            alt="Banner"
+            className="absolute top-5 left-0 w-full h-full object-cover opacity-85"
+          />
+          <div className="relative z-20">
+            {" "}
             <h2 className="text-4xl font-semibold -tracking-wider leading-2 w-[95vw] text-[#23282E] md:w-[80vw] md:text-5xl lg:text-6xl lg:w-[70vw]">
-              Start learning at Pakistan's 2nd Best University , Asli and Nasli
+              Start learning at Pakistan's 2nd Best University, Asli and Nasli
               Taleem
             </h2>
-            <p className="mt-5 text-lg lg:text-xl w-[90vw] text-gray-500 lg:w-[60vw]">Accredited by the only recognition that truly matters in the workplace, our programs focus on delivering practical skills. Forget Shakespeare and Mr. Chips;.</p>
-
+            <p className="mt-5 text-lg lg:text-xl text-center w-[90vw] text-gray-400 lg:w-[60vw]">
+              Accredited by the only recognition that truly matters in the
+              workplace, our programs focus on delivering practical skills.
+              Forget Shakespeare and Mr. Chips;
+            </p>
             <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 lg:py-3 lg:px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105 mt-5">
               Start Learning
               <ArrowRight className="inline-block ml-2 w-5 lg:w-6" />
             </button>
+            <div className="img flex flex-col items-center mt-8 py-2 px-4">
+              <div className="relative w-full max-w-[700px] group">
+                {" "}
+                <img
+                  src="/azad.jpg"
+                  alt="CEO"
+                  className="w-full h-auto object-cover rounded-md shadow-black transition duration-300 ease-in-out transform group-hover:scale-105 group-hover:grayscale-0 group-hover:border-4 group-hover:border-[#2b1f48] group-hover:shadow-2xl"
+                />
+                <p className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white  text-lg text-center transition-all duration-300 ease-in-out group-hover:bg-[#2b1f48] group-hover:text-white group-hover:opacity-100">
+                  CEO: Azad Chaiwala
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
