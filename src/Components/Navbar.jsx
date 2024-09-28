@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full  mx-auto">
-      <nav className="sticky top-0 z-50 flex justify-between items-center py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl mx-auto bg-transparent ">
+      <nav className="sticky top-0 z-50 flex justify-between items-center py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl  bg-transparent ">
         {/* Logo */}
         <div>
           <Link to="/">

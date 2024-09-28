@@ -7,9 +7,7 @@ import Achievements from "./Pages/Achievements";
 import Navbar from "./Components/Navbar";
 
 const App = () => {
-
   const router = createBrowserRouter(
-   
     [
       {
         path: "/",
@@ -32,7 +30,7 @@ const App = () => {
       basename: "/",
     }
   );
-  return   <RouterProvider   router={router} />;
+  return <RouterProvider router={router} />;
 };
 
 export default App;

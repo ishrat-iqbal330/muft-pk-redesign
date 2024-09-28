@@ -18,11 +18,11 @@ const Hero = () => {
           />
           <div className="relative z-20">
             {" "}
-            <h2 className="text-4xl font-semibold -tracking-wider leading-2 w-[95vw] text-[#23282E] md:w-[80vw] md:text-5xl lg:text-6xl lg:w-[70vw]">
+            <h2 className="text-4xl font-semibold -tracking-wider leading-2 w-[95vw] text-[#23282E] md:w-[80vw] md:text-5xl lg:text-6xl lg:w-[70vw] mx-auto">
               Start learning at Pakistan's 2nd Best University, Asli and Nasli
               Taleem
             </h2>
-            <p className="mt-5 text-lg lg:text-xl text-center w-[90vw] text-gray-400 lg:w-[60vw]">
+            <p className="mt-5 text-lg lg:text-xl text-center mx-auto w-[90vw] text-gray-400 lg:w-[60vw]">
               Accredited by the only recognition that truly matters in the
               workplace, our programs focus on delivering practical skills.
               Forget Shakespeare and Mr. Chips;
@@ -37,9 +37,9 @@ const Hero = () => {
                 <img
                   src="/azad.jpg"
                   alt="CEO"
-                  className="w-full h-auto object-cover rounded-md shadow-black transition duration-300 ease-in-out transform group-hover:scale-105 group-hover:grayscale-0 group-hover:border-4 group-hover:border-[#2b1f48] group-hover:shadow-2xl"
+                  className="w-full min-w-[400px] h-[300px] md:h-[400px] lg:w-[100%] lg:h-[350px] object-cover rounded-lg shadow-lg transition duration-300 ease-in-out transform "
                 />
-                <p className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white  text-lg text-center transition-all duration-300 ease-in-out group-hover:bg-[#2b1f48] group-hover:text-white group-hover:opacity-100">
+                <p className="absolute bottom-0 w-full bg-black bg-opacity-50 py-2 text-white text-xl text-center transition-all duration-300 ease-in-out">
                   CEO: Azad Chaiwala
                 </p>
               </div>
