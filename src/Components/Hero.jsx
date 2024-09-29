@@ -39,8 +39,8 @@ const Hero = () => {
                   alt="CEO"
                   className="w-full min-w-[400px] h-[300px] md:h-[400px] lg:w-[100%] lg:h-[350px] object-cover rounded-lg shadow-lg transition duration-300 ease-in-out transform "
                 />
-                <p className="absolute bottom-0 w-full bg-black bg-opacity-50 py-2 text-white text-xl text-center transition-all duration-300 ease-in-out">
-                  CEO: Azad Chaiwala
+                <p className="absolute bottom-0 w-full bg-black bg-opacity-50 font-semibold py-2 px-4 text-white text-xl text-start transition-all duration-300 ease-in-out">
+                 Azad Chaiwala
                 </p>
               </div>
             </div>
