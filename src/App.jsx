@@ -4,7 +4,6 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Courses from "./Pages/Courses";
 import Achievements from "./Pages/Achievements";
-import Navbar from "./Components/Navbar";
 
 const App = () => {
   const router = createBrowserRouter(
