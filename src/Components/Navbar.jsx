@@ -1,13 +1,37 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { LucideMenu, ArrowRight } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation(); // Detect current route
+  const [isSticky, setIsSticky] = useState(false);
+
+  // Detect if it's the home page or not and adjust navbar behavior
+  useEffect(() => {
+    const isHomePage = location.pathname === "/"; // Set sticky only on landing page
+    setIsSticky(isHomePage);
+
+    // Optional: Add event listener for sticky behavior on scroll if needed
+    if (isHomePage) {
+      const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY > 50) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [location.pathname]);
 
   return (
-    <div className="w-full  mx-auto">
-      <nav className="sticky top-0 z-50 flex justify-between items-center py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl  bg-transparent ">
+    <div className={`w-full mx-auto ${isSticky ? "sticky top-0 z-50 bg-white shadow-md" : "static"} transition-all duration-300`}>
+      <nav className="flex justify-between items-center py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl bg-transparent">
         {/* Logo */}
         <div>
           <Link to="/">
@@ -31,16 +55,14 @@ const Navbar = () => {
 
         {/* Contact Button & Menu Icon */}
         <div className="flex gap-5 items-center">
-          <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 lg:py-3 lg:px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105  items-center hidden md:flex">
+          <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 lg:py-3 lg:px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105 items-center hidden md:flex">
             Contact
             <ArrowRight className="inline-block ml-2 w-5 lg:w-6" />
           </button>
-          <div>
-            <LucideMenu
-              className="lg:hidden cursor-pointer"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            />
-          </div>
+          <LucideMenu
+            className="lg:hidden cursor-pointer"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
         </div>
       </nav>
 
@@ -48,7 +70,7 @@ const Navbar = () => {
       <div
         className={`${
           isMenuOpen ? "flex" : "hidden"
-        } flex-col lg:hidden bg-white shadow-md p-5 space-y-4 mt-4 text-center transition-all duration-400 ease-in-out`}
+        } flex-col lg:hidden bg-white shadow-md p-5 space-y-4 text-center transition-all duration-400 ease-in-out`}
       >
         <Link to="/courses" className="nav-link hover:text-purple-600">
           Our Courses
@@ -61,7 +83,7 @@ const Navbar = () => {
           Company
         </Link>
 
-        <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 rounded-full shadow-lg transform transition duration-300 hover:scale-105 flex items-center justify-center md:hidden">
+        <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 rounded-full shadow-lg transform transition duration-300 hover:scale-105 flex items-center justify-center">
           Contact
           <ArrowRight className="inline-block ml-2 w-5" />
         </button>
