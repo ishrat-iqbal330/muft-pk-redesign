@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <div className={`w-full mx-auto ${isSticky ? "sticky top-0 z-50 bg-white shadow-md" : "static"} transition-all duration-300`}>
+    <div className={`w-full mx-auto ${isSticky ? "sticky top-0 z-50 bg-white shadow-md" : "static"} sticky `}>
       <nav className="flex justify-between items-center py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl bg-transparent">
         {/* Logo */}
         <div>

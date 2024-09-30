@@ -2,7 +2,7 @@ import React from "react";
 
 const Brands = () => {
   return (
-    <div className="w-full flex justify-center items-center mx-auto bg-gradient-to-r from-[#1a0d29] via-[#0d1033] to-[#1a0d29] h-48 sm:h-48 md:h-56 lg:h-52 shadow-lg">
+    <div className="w-full mt-14 flex justify-center items-center mx-auto bg-gradient-to-r from-[#1a0d29] via-[#0d1033] to-[#1a0d29] h-48 sm:h-48 md:h-56 lg:h-52 shadow-lg">
       <div className="brands flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-10 lg:gap-16 px-4 py-2 w-full h-full opacity-80">
         <img
           src="/brand2.png"

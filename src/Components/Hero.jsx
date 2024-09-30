@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -7,8 +7,8 @@ const Hero = () => {
     <div className="w-full mx-auto">
       <div className="relative mx-auto h-full min-h-[800px]">
         <div className="absolute inset-0 bg-[url('/doted-bg.jpg')] bg-cover bg-no-repeat opacity-20" />
-        <Navbar />
-        <div className="relative mt-24 mx-auto w-full h-[800px] flex flex-col items-center justify-center text-center">
+        
+        <div className="relative pt-28  mx-auto w-full h-[800px] flex flex-col items-center justify-center text-center">
           <img
             src="/banner.png"
             alt="Banner"
@@ -29,7 +29,7 @@ const Hero = () => {
               <img
                 src="/coching.jpg"
                 alt="CEO"
-                className="w-full min-w-[300px] h-[300px] md:min-w-[500px] lg:min-w-[600px] object-cover rounded-lg"
+                className="w-full min-w-[300px] h-[300px] md:min-w-[500px] lg:min-w-[600px] lg:min-h-[400px] object-cover rounded-lg"
               />
             </div>
           </div>
