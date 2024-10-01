@@ -49,7 +49,7 @@ const OurCourses = () => {
               <img
                 src={course.image}
                 alt={course.name}
-                className="w-full   h-48 object-cover rounded-lg  lg:max-w-[900px] "
+                className="w-full   h-48 object-cover rounded-lg  lg:max-w-[1000px] "
               />
               <h4 className="text-2xl font-bold mt-3 text-left">
                 {course.name}
@@ -67,16 +67,16 @@ const OurCourses = () => {
                   <p className="text-gray-400">{course.lessons}</p>
                 </span>
               </div>
-              <button className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-5 py-3 shadow-lg transform transition duration-300 hover:scale-105 mt-5">
+              <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 shadow-lg transform transition duration-300 hover:scale-105 mt-5">
                 Start Learning
               </button>
             </div>
           ))}
         </div>
 
-        <div className="flex justify-end mt-6 group relative w-full max-w-[75vw]">
+        <div className="flex justify-center sm:justify-start lg:justify-end mt-6 group relative w-full max-w-[75vw]">
           {/* Adjusted to justify-start */}
-          <p className="text-right sm:text-lg text-gray-600 mt-3 cursor-pointer group-hover:text-purple-600 transition-colors delay-50 duration-300 pb-2 ">
+          <p className="text-center sm:text-left lg:text-right text-base  sm:text-lg text-gray-600 mt-3 cursor-pointer group-hover:text-purple-600 transition-colors delay-50 duration-300 pb-2 ">
             View All Courses
             <ArrowRight className="inline-block ml-2 w-5 lg:w-6  text-purple-600 transition-transform duration-300 group-hover:translate-x-1" />
           </p>
