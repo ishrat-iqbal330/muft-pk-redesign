@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { LucideMenu, ArrowRight } from "lucide-react";
+import { LucideMenu, ArrowRight, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation(); // Detect current route
   const [isSticky, setIsSticky] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // Dropdown state
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen); // Toggle dropdown open/close
+  };
 
   // Detect if it's the home page or not and adjust navbar behavior
   useEffect(() => {
@@ -29,9 +34,26 @@ const Navbar = () => {
     }
   }, [location.pathname]);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".dropdown")) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className={`w-full mx-auto ${isSticky ? "sticky top-0 z-50 bg-white shadow-md" : "static"} sticky `}>
-      <nav className="flex justify-between items-center py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl bg-transparent">
+    <div
+      className={`w-full mx-auto ${
+        isSticky ? "sticky top-0 z-50 bg-white shadow-md" : ""
+      }`}
+    >
+      <nav className="flex items-center justify-between py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl bg-transparent">
         {/* Logo */}
         <div>
           <Link to="/">
@@ -45,12 +67,44 @@ const Navbar = () => {
             Our Courses
           </Link>
           <Link to="/achievements" className="nav-link hover:text-purple-800">
-            Achievements
+            Success Stories
           </Link>
-          <p className="nav-link hover:text-purple-800">Resources</p>
+
           <Link to="/company" className="nav-link hover:text-purple-800">
             Company
           </Link>
+          <div className="relative inline-block text-left dropdown">
+            {/* Trigger button for dropdown */}
+            <button
+              onClick={toggleDropdown}
+              className="flex items-center justify-between  "
+              aria-expanded={isOpen}
+            >
+              Resources <ChevronDown className="w-5 h-5" />
+            </button>
+            {isOpen && (
+              <div className="absolute mt-2 w-48 bg-white shadow-lg rounded-md z-10">
+                <div className="py-2">
+                  <a
+                    href="https://www.youtube.com/channel/UCM5QNdoIefx6eumjPk8ZTMw"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    YouTube
+                  </a>
+                  <a
+                    href="https://www.facebook.com/AzadChaiwala/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
         </ul>
 
         {/* Contact Button & Menu Icon */}
@@ -78,7 +132,35 @@ const Navbar = () => {
         <Link to="/achievements" className="nav-link hover:text-purple-600">
           Achievements
         </Link>
-        <p className="nav-link hover:text-purple-600">Resources</p>
+
+        {/* Resources in mobile view */}
+        <button
+          onClick={toggleDropdown}
+          className="nav-link hover:text-purple-600"
+        >
+          Resources
+        </button>
+        {isOpen && (
+          <div className="bg-white py-2 rounded-lg shadow-md">
+            <a
+              href="https://www.youtube.com"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YouTube
+            </a>
+            <a
+              href="https://www.facebook.com"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </div>
+        )}
+
         <Link to="/company" className="nav-link hover:text-purple-600">
           Company
         </Link>

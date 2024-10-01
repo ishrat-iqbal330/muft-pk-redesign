@@ -16,12 +16,13 @@ const Hero = () => {
 
           <div className="relative z-20 pt-40 md:pt-0">
             <h2 className="text-4xl font-semibold tracking-tight w-[95vw] md:w-[80vw] md:text-5xl lg:text-6xl lg:w-[70vw] mx-auto">
-              Start Learning Deeper and More Amazing Designs Together
+              Start learning at Pakistan's 2nd Best University, Asli and Nasli
+              Taleem
             </h2>
             <p className="mt-5 text-lg lg:text-xl w-[90vw] text-gray-400 lg:w-[60vw]">
-              Join our online courses and enhance your skills with expert
-              guidance. Get access to hands-on projects and exclusive content
-              for free.
+              Accredited by the only recognition that truly matters in the
+              workplace, our programs focus on delivering practical skills.
+              Forget Shakespeare and Mr. Chips;
             </p>
             <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 lg:py-3 lg:px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105 mt-5">
               Start Free Trial
