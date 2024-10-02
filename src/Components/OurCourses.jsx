@@ -49,7 +49,7 @@ const OurCourses = () => {
               <img
                 src={course.image}
                 alt={course.name}
-                className="w-full   h-48 object-cover rounded-lg  lg:max-w-[1000px] "
+                className="w-full   h-48 object-cover rounded-lg  lg:max-w-[1000px] shadow-sm "
               />
               <h4 className="text-2xl font-bold mt-3 text-left">
                 {course.name}
