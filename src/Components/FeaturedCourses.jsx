@@ -8,16 +8,14 @@ const FeaturedCourses = () => {
           Explore Our Highlighted Courses
         </h2>
         <p className="text-center text-gray-300 mt-4 text-sm md:text-base lg:w-[48vw]">
-          Explore our top courses to learn new skills and gain knowledge! Start
-          your journey today and unlock your potential! Whether you want to
-          improve your job skills.
+          Explore our top courses to learn new skills and gain knowledge! Start your journey today and unlock your potential! Whether you want to improve your job skills.
         </p>
       </div>
       <div className="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-[80vw] w-full mx-auto relative bottom-56 right-6">
         <div className="card px-4 py-6 bg-white shadow-lg rounded-xl">
           <img
             src="/googleadds.jpg"
-            alt=""
+            alt="Google Ads Course"
             className="rounded-xl w-full h-[210px] object-cover shadow-sm"
           />
           <div className="card-body mt-4">
@@ -32,7 +30,7 @@ const FeaturedCourses = () => {
         <div className="card px-4 py-6 bg-white shadow-lg rounded-xl">
           <img
             src="/pythonpro.jpg"
-            alt=""
+            alt="Python Free Course"
             className="rounded-xl w-full h-[210px] object-cover shadow-sm"
           />
           <div className="card-body mt-4">
@@ -47,7 +45,7 @@ const FeaturedCourses = () => {
         <div className="card px-4 py-6 bg-white shadow-lg rounded-xl">
           <img
             src="/cyber-security.jpg"
-            alt=""
+            alt="Cyber Security Course"
             className="rounded-xl w-full h-[210px] object-cover shadow-sm"
           />
           <div className="card-body mt-4">
