@@ -3,7 +3,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Courses from "./Pages/Courses";
-import Achievements from "./Pages/Achievements";
+
+import Company from "./Pages/Company";
+import SuccessStories from "./Pages/SuccessStories";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -21,8 +23,12 @@ const App = () => {
         element: <Courses />,
       },
       {
-        path: "/achievements",
-        element: <Achievements />,
+        path: "/successstories",
+        element: <SuccessStories />,
+      },
+      {
+        path: "/company",
+        element: <Company />,
       },
     ],
     {
