@@ -87,7 +87,7 @@ const Navbar = () => {
                 <div className="py-2">
                   <a
                     href="https://www.youtube.com/channel/UCM5QNdoIefx6eumjPk8ZTMw"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:text-purple-500 "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -95,7 +95,7 @@ const Navbar = () => {
                   </a>
                   <a
                     href="https://www.facebook.com/AzadChaiwala/"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:text-purple-500 "
                     target="_blank"
                     rel="noopener noreferrer"
                   >

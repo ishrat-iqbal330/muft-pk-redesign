@@ -4,6 +4,7 @@ import Hero from "../Components/Hero";
 import Brands from "../Components/Brands";
 import OurCourses from "../Components/OurCourses";
 import Navbar from "../Components/Navbar";
+import FeaturedCourses from "../Components/FeaturedCourses";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Brands />
       <OurCourses />
+      <FeaturedCourses />
     </div>
   );
 };
