@@ -5,6 +5,7 @@ import Brands from "../Components/Brands";
 import OurCourses from "../Components/OurCourses";
 import Navbar from "../Components/Navbar";
 import FeaturedCourses from "../Components/FeaturedCourses";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Brands />
       <OurCourses />
       <FeaturedCourses />
+      <Footer />
     </div>
   );
 };
