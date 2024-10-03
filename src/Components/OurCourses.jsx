@@ -31,7 +31,7 @@ const OurCourses = () => {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center text-center py-28 px-4 w-full bg-gray-100">
+      <div className="flex flex-col justify-center items-center text-center py-28 px-4 w-full bg-gray-100 ">
         <h5 className="text-2xl sm:text-3xl lg:text-4xl font-bold max-w-[90vw] sm:max-w-[70vw] md:max-w-[60vw] text-transparent bg-clip-text bg-gradient-to-r from-[#403663] to-[#2b1f48]">
           Top Free Courses We Offer!
         </h5>
@@ -67,7 +67,7 @@ const OurCourses = () => {
                   <p className="text-gray-400">{course.lessons}</p>
                 </span>
               </div>
-              <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 shadow-lg transform transition duration-300 hover:scale-105 mt-5">
+              <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 shadow-lg transform transition duration-300 hover:scale-105 mt-5 ">
                 Start Learning
               </button>
             </div>

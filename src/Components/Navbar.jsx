@@ -53,7 +53,7 @@ const Navbar = () => {
         isSticky ? "sticky top-0 z-50 bg-white shadow-md" : ""
       }`}
     >
-      <nav className="flex items-center justify-between py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl bg-transparent">
+      <nav className="flex items-center justify-between py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl bg-transparent mx-auto">
         {/* Logo */}
         <div>
           <Link to="/">
