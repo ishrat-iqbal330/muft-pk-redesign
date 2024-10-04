@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <div className="w-full mx-auto">
       <div className="relative mx-auto h-full min-h-[1000px] lg:min-h-[700px]">
-        <div className="absolute inset-0 bg-[url('/doted-bg.jpg')] bg-cover bg-no-repeat opacity-20" />
+        <div className="absolute inset-0 bg-[url('/doted-bg.webp')] bg-cover bg-no-repeat opacity-20" />
 
         <div className="relative pt-28 mx-auto w-full h-[800px] flex flex-col items-center justify-center text-center">
           <img
-            src="/banner (1).png"
+            src="/banner (1).webp"
             alt="Banner"
             className="absolute top-5 left-0 w-full h-full object-cover opacity-60"
           />
@@ -34,7 +34,7 @@ const Hero = () => {
               {/* First image with text */}
               <div className="relative flex flex-col items-center ">
                 <img
-                  src="/hero222.jpg"
+                  src="/hero222.webp"
                   alt="Online Course 1"
                   className="w-full min-w-[300px] h-[300px] md:w-[400px] md:h-[300px] object-cover rounded-lg"
                 />
@@ -51,7 +51,7 @@ const Hero = () => {
               {/* Second image with text */}
               <div className="relative flex flex-col items-center">
                 <img
-                  src="/team.jpg"
+                  src="/team.webp"
                   alt="Online Course 2"
                   className="w-full min-w-[300px] h-[300px] md:w-[400px] md:h-[300px] object-cover rounded-lg"
                 />

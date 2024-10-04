@@ -7,7 +7,7 @@ const OurCourses = () => {
       name: "Game Development Course",
       description:
         "Ready to build your own 3D game? This free Unity course has got you covered! Learn the basics, create cool projects, and bring your game ideas to life.",
-      image: "/gmae deve.jpg",
+      image: "/gmae deve.webp",
       duration: "4.5 hours",
       lessons: "21 Lessons",
     },
@@ -15,7 +15,7 @@ const OurCourses = () => {
       name: "Facebook Ads Full Course",
       description:
         "This course will help you create effective Facebook ads. Learn how to design and run successful campaigns. Let's get your ads on!",
-      image: "/facebook ads course.jpg",
+      image: "/facebook ads course.webp",
       duration: "3 hours",
       lessons: "15 Lessons",
     },
@@ -23,7 +23,7 @@ const OurCourses = () => {
       name: "Social Media Management Course",
       description:
         "This course covers the basics of social media. Build a basic project and get started with social media management. Let's get started!",
-      image: "/social media managment.jpg",
+      image: "/social media managment.webp",
       duration: "5 hours",
       lessons: "18 Lessons",
     },

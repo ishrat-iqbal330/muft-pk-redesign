@@ -57,7 +57,7 @@ const Navbar = () => {
         {/* Logo */}
         <div>
           <Link to="/">
-            <img src="/logo-muft.svg" className="lg:w-60 w-40" alt="Logo" />
+            <img src="/logo-muft.webp" className="lg:w-60 w-40" alt="Logo" />
           </Link>
         </div>
 

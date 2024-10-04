@@ -16,7 +16,7 @@ const FeaturedCourses = () => {
       <div className="cards grid place-content-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[80vw] w-full mx-auto relative bottom-56 left-0 right-0 ">
         <div className="card px-4 py-6 bg-white shadow-lg rounded-xl">
           <img
-            src="/googleadds.jpg"
+            src="/googleadds.webp"
             alt="Google Ads Course"
             className="rounded-xl w-full h-[210px] object-cover shadow-sm"
           />
@@ -31,7 +31,7 @@ const FeaturedCourses = () => {
         </div>
         <div className="hidden  px-4 py-6 bg-white shadow-lg rounded-xl  lg:block">
           <img
-            src="/pythonpro.jpg"
+            src="/pythonpro.webp"
             alt="Python Free Course"
             className="rounded-xl w-full h-[210px] object-cover shadow-sm"
           />
@@ -46,7 +46,7 @@ const FeaturedCourses = () => {
         </div>
         <div className="card hidden  px-4 py-6 bg-white shadow-lg rounded-xl sm:block lg:block">
           <img
-            src="/cyber-security.jpg"
+            src="/cyber-security.webp"
             alt="Cyber Security Course"
             className="rounded-xl w-full h-[210px] object-cover shadow-sm"
           />
