@@ -6,6 +6,7 @@ import OurCourses from "../Components/OurCourses";
 import Navbar from "../Components/Navbar";
 import FeaturedCourses from "../Components/FeaturedCourses";
 import Footer from "../Components/Footer";
+import CEOsection from "../Components/CEOsection";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Brands />
       <OurCourses />
       <FeaturedCourses />
+      <CEOsection />
       <Footer />
     </div>
   );
