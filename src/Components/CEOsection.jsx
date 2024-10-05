@@ -17,6 +17,9 @@ const CEOsection = () => {
       <div className="right">
         <img src="/azad.webp" alt="" width={"500px"} height={"500px"} />
       </div>
+      <div>
+        <img src="/AzadChaiwala.webp" alt="" width={"500px"} height={"500px"} />
+      </div>
     </div>
   );
 };
