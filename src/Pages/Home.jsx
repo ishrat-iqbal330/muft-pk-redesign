@@ -11,11 +11,12 @@ import CEOsection from "../Components/CEOsection";
 const Home = () => {
   return (
     <div>
+      {" "}
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <Brands />
       <OurCourses />
-      <FeaturedCourses />
+      <FeaturedCourses /> */}
       <CEOsection />
       <Footer />
     </div>
