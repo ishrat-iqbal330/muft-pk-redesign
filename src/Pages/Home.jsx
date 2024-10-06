@@ -13,10 +13,10 @@ const Home = () => {
     <div>
       {" "}
       <Navbar />
-      {/* <Hero />
+      <Hero />
       <Brands />
       <OurCourses />
-      <FeaturedCourses /> */}
+      <FeaturedCourses />
       <CEOsection />
       <Footer />
     </div>
