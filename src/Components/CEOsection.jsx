@@ -17,18 +17,19 @@ const CEOsection = () => {
         </p>
       </div>
       <div className="right mt-5 ">
-        <div className="w-[49vw] bg-white rounded-3xl px-4 py-4" >
+        <div className="w-[90vw] bg-white rounded-3xl px-4 py-4" >
           <img src="/azad.webp" alt="" width={"500px"} height={"500px"} className="rounded-xl" />
         </div>
-        <div className="w-[90vw] bg-white rounded-3xl">
+        <div className="w-[40vw] bg-white rounded-3xl px-3 py-4 relative top-[-80px]">
           <img
             src="/AzadChaiwala.webp"
             alt=""
             width={"300px"}
             height={"300px"}
+            className="rounded-xl"
           />
-          <h4>Azad Chaiwala</h4>
-          <p>Founder of Muft.pk and Chaiwala.com</p>
+          <h4 className="text-md text-gray-500">Azad Chaiwala</h4>
+          <p className="text-sm text-gray-500 "> Founder of Muft.pk and Chaiwala.com</p>
         </div>
       </div>
     </div>
