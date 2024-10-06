@@ -19,7 +19,7 @@ const Hero = () => {
               Start learning at Pakistan's 2nd Best University, Asli and Nasli
               Taleem
             </h2>
-            <p className="mt-5 text-lg lg:text-xl w-[90vw] text-gray-400 lg:w-[60vw]">
+            <p className="mt-5 text-center text-lg lg:text-xl w-[90vw] text-gray-400 lg:w-[60vw]">
               Accredited by the only recognition that truly matters in the
               workplace, our programs focus on delivering practical skills.
               Forget Shakespeare and Mr. Chips;
