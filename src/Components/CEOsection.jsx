@@ -28,8 +28,8 @@ const CEOsection = () => {
             height={"300px"}
             className="rounded-xl"
           />
-          <h4 className="text-md text-gray-500">Azad Chaiwala</h4>
-          <p className="text-sm text-gray-500 "> Founder of Muft.pk and Chaiwala.com</p>
+          <h4 className="text-md text-gray-500 text-center">Azad Chaiwala</h4>
+          <p className="text-sm text-gray-500 text-center"> Founder of Muft.pk and Chaiwala.com</p>
         </div>
       </div>
     </div>
