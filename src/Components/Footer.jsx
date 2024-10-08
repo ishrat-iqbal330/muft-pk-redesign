@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <div className=' bg-gradient-to-r from-[#1a0d29] via-[#0d1033] to-[#1a0d29]'>
       <div>
         
       </div>
