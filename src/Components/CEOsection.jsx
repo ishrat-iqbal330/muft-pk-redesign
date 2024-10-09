@@ -3,11 +3,11 @@ import React from "react";
 const CEOsection = () => {
   return (
     <div className="w-full mx-auto bg-gray-100 py-10 px-4 md:px-12 flex flex-col justify-around items-center ">
-      <div className="left ">
-        <h3 className="text-3xl font-semibold w-[90vw]">
+      <div className="left flex flex-col items-center justify-center ">
+        <h3 className="text-3xl font-semibold w-[98vw] px-4 ">
           Our Founder’s Vision for Free Education
         </h3>
-        <p className="text-gray-500 mt-4 w-[85vw]">
+        <p className="text-gray-500 mt-4 w-[98vw] px-4 ">
           Azad Chaiwala, a Pakistani entrepreneur, is the founder of Muft.pk and
           Chaiwala.com. His mission is to make education accessible to everyone,
           offering free courses that help people learn practical skills and
