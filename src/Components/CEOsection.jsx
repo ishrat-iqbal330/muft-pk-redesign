@@ -30,7 +30,7 @@ const CEOsection = () => {
           </div>
 
           {/* Secondary Image Positioned Over the Main One */}
-          <div className="relative bg-white rounded-3xl px-3 py-4 w-full max-w-[300px] lg:max-w-[300px] md:max-w-[250px] sm:w-[85%] -mt-32 ml-52 sm:-mt-20 md:ml-60 md:-mt-32 lg:-mt-40">
+          <div className="relative bg-white rounded-3xl px-3 py-4 w-full max-w-[300px] lg:max-w-[300px] md:max-w-[250px] sm:w-[85%] -mt-32 ml-52 sm:-mt-20 md:ml-60 md:-mt-32 lg:-mt-44">
             <img
               src="/AzadChaiwala.webp"
               alt="Azad Chaiwala"
