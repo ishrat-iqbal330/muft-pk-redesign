@@ -2,8 +2,8 @@ import React from "react";
 
 const CEOsection = () => {
   return (
-    <div className="w-full mx-auto bg-gray-100 py-10 px-4 md:px-12 flex flex-col justify-around items-center ">
-      <div className="left flex flex-col items-center justify-center ">
+    <div className="w-full  mx-auto bg-gray-100 py-10 px-4 md:px-12 flex flex-col justify-around items-center ">
+      <div className="left flex flex-col items-center justify-center  ">
         <h3 className="text-3xl font-semibold w-[98vw] px-4 ">
           Our Founder’s Vision for Free Education
         </h3>
@@ -16,20 +16,33 @@ const CEOsection = () => {
           growth through his platforms.
         </p>
       </div>
-      <div className="right mt-5 ">
-        <div className="w-[90vw] bg-white rounded-3xl px-4 py-4" >
-          <img src="/azad.webp" alt="" width={"500px"} height={"500px"} className="rounded-xl" />
+      <div className="right mt-5  ">
+        <div className="w-[90vw] sm:w-[85vw] bg-white rounded-3xl px-4 py-4">
+          <img
+            src="/azad.webp"
+            alt=""
+            // width={"570px"}
+            // height={"500px"}
+            className="rounded-xl"
+          />
         </div>
-        <div className="w-[40vw] bg-white rounded-3xl px-3 py-4 relative top-[-80px]">
+        <div className="w-[40vw] sm:w-[50vw] bg-white rounded-3xl px-3 py-4 relative top-[-100px] sm:top-[-150px] left-[7px]">
           <img
             src="/AzadChaiwala.webp"
             alt=""
-            width={"300px"}
-            height={"300px"}
+            // width={""}
+            // height={""}
             className="rounded-xl"
           />
-          <h4 className="text-md text-gray-500 text-center">Azad Chaiwala</h4>
-          <p className="text-sm text-gray-500 text-center"> Founder of Muft.pk and Chaiwala.com</p>
+          <div className="flex gap-1 flex-col items-center mt-3 ">
+            <h4 className="text-md font-semibold text-[#0d1033] w-full px-2">
+              Azad Chaiwala
+            </h4>
+            <p className="text-sm text-gray-400 w-full px-2">
+              {" "}
+              Founder of Muft.pk and Chaiwala.com
+            </p>
+          </div>
         </div>
       </div>
     </div>
