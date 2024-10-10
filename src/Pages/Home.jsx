@@ -7,6 +7,7 @@ import Navbar from "../Components/Navbar";
 import FeaturedCourses from "../Components/FeaturedCourses";
 import Footer from "../Components/Footer";
 import CEOsection from "../Components/CEOsection";
+import FAQS from "../Components/FAQS";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <OurCourses />
       <FeaturedCourses />
       <CEOsection />
+      <FAQS />
       <Footer />
     </div>
   );
