@@ -9,14 +9,14 @@ const FAQS = () => {
   };
 
   return (
-    <div className="w-full bg-white flex flex-col md:flex-row md:justify-between md:px-20 justify-center items-center py-20">
+    <div className="w-full bg-white flex flex-col md:flex-row md:justify-between md:px-20 justify-center items-center py-20 ">
       {/* Header Section */}
       <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
         <p className="text-gray-500 text-lg lg:text-xl">Most Questions</p>
-        <h3 className="text-3xl font-semibold text-black lg:text-4xl lg:font-bold">
+        <h3 className="text-3xl font-semibold text-black lg:text-6xl lg:font-bolder leading-tight tracking-tight">
           FREQUENTLY ASKED QUESTIONS
         </h3>
-        <button className="bg-black text-white px-5 py-3 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
+        <button className="bg-black text-white px-5 py-3 rounded-full shadow-lg transform transition duration-300 hover:scale-105 mt-5">
           Any Question
         </button>
       </div>
@@ -30,7 +30,7 @@ const FAQS = () => {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleFaq(0)} // Toggle for FAQ item 1
           >
-            <p className="text-black text-lg ">
+            <p className="text-black text-lg  ">
               What is the duration of the courses?
             </p>
             <span className="text-purple-500 text-2xl">

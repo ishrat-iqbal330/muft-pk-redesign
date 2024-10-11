@@ -22,7 +22,7 @@ const Hero = () => {
             <p className="mt-5 text-center text-lg lg:text-xl w-[90vw] text-gray-400 lg:w-[60vw]">
               Accredited by the only recognition that truly matters in the
               workplace, our programs focus on delivering practical skills.
-              Forget Shakespeare and Mr. Chips;
+              Forget Shakespeare and Mr. Chips.
             </p>
             <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 lg:py-3 lg:px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105 mt-5">
               Start Free Trial

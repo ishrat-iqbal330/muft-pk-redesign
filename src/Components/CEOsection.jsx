@@ -2,7 +2,7 @@ import React from "react";
 
 const CEOsection = () => {
   return (
-    <div className="w-full mx-auto max-w-full">
+    <div className="w-full mx-auto max-w-full ">
       <div className="bg-gray-100 py-10 px-2 sm:px-4 md:px-12 flex flex-col md:flex-row justify-between items-center">
         {/* Left Section (Text) */}
         <div className="left flex flex-col items-center justify-center md:w-1/2 md:items-start">

@@ -19,7 +19,7 @@ const Home = () => {
       <OurCourses />
       <FeaturedCourses />
       <CEOsection />
-      <FAQS />
+      <FAQS className="mt-10" />
       <Footer />
     </div>
   );
