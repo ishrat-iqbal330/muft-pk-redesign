@@ -12,8 +12,8 @@ const FAQS = () => {
     <div className="w-full bg-white flex flex-col md:flex-row md:justify-between md:px-20 justify-center items-center py-20">
       {/* Header Section */}
       <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
-        <p className="text-gray-500 text-lg">Most Questions</p>
-        <h3 className="text-3xl font-semibold text-black">
+        <p className="text-gray-500 text-lg lg:text-xl">Most Questions</p>
+        <h3 className="text-3xl font-semibold text-black lg:text-4xl lg:font-bold">
           FREQUENTLY ASKED QUESTIONS
         </h3>
         <button className="bg-black text-white px-5 py-3 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
