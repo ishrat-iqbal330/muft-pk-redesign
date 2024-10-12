@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
             <h4 className="text-4xl font-bold mb-3 md:mb-0">Muft.pk</h4>
-            <div className="flex items-center w-full md:w-auto">
+            <div className="flex items-center w-full md:w-full md:max-w-[500px] max-w-[300px]">
               <input
                 type="email"
                 placeholder="Your email address"
