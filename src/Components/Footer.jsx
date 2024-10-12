@@ -5,15 +5,15 @@ const Footer = () => {
     <div className="w-full mx-auto relative mt-20">
       <div className="bg-gradient-to-r from-[#1a0d29] via-[#0d1033] to-[#1a0d29] text-white p-6 pt-32 pb-16">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+          <div className="flex flex-col md:flex-row  items-start md:items-center mb-12">
             <h4 className="text-4xl font-bold mb-3 md:mb-0">Muft.pk</h4>
-            <div className="flex items-center w-full md:w-full md:max-w-[500px] max-w-[300px]">
+            <div className="flex flex-col md:flex-row justify-between items-center w-full md:w-full md:max-w-[500px] ">
               <input
                 type="email"
                 placeholder="Your email address"
                 className="bg-transparent border-b border-gray-600 p-2 flex-grow md:w-64 focus:outline-none focus:border-white mr-4"
               />
-              <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+              <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300 mt-4 md:mt-0 ">
                 Enter
               </button>
             </div>
