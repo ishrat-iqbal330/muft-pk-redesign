@@ -13,7 +13,7 @@ const Footer = () => {
                 placeholder="Your email address"
                 className="bg-transparent border-b border-gray-600 p-2 flex-grow md:w-64 focus:outline-none focus:border-white mr-4"
               />
-              <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300 mt-4 md:mt-0 ">
+              <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300 mt-4 md:mt-0 w-full md:w-auto">
                 Enter
               </button>
             </div>
