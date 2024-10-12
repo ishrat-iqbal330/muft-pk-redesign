@@ -30,7 +30,7 @@ const Hero = () => {
             </button>
 
             {/* Updated Image and Text Section without gaps */}
-            <div className="flex flex-col md:flex-row justify-center gap-4 mt-10">
+            <div className="flex flex-col md:flex-row justify-center gap-4 mt-10 px-3 mb-4">
               {/* First image with text */}
               <div className="relative flex flex-col items-center ">
                 <img
