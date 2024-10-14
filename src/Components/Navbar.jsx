@@ -4,20 +4,18 @@ import { LucideMenu, ArrowRight, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation(); // Detect current route
+  const location = useLocation();
   const [isSticky, setIsSticky] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // Dropdown state
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen); // Toggle dropdown open/close
+    setIsOpen(!isOpen);
   };
 
-  // Detect if it's the home page or not and adjust navbar behavior
   useEffect(() => {
-    const isHomePage = location.pathname === "/"; // Set sticky only on landing page
+    const isHomePage = location.pathname === "/";
     setIsSticky(isHomePage);
 
-    // Optional: Add event listener for sticky behavior on scroll if needed
     if (isHomePage) {
       const handleScroll = () => {
         const scrollY = window.scrollY;
@@ -34,7 +32,6 @@ const Navbar = () => {
     }
   }, [location.pathname]);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest(".dropdown")) {
@@ -54,14 +51,12 @@ const Navbar = () => {
       }`}
     >
       <nav className="flex items-center justify-between py-3 px-5 md:py-4 md:px-6 lg:max-w-screen-2xl bg-transparent mx-auto">
-        {/* Logo */}
         <div>
           <Link to="/">
             <img src="/logo-muft.webp" className="lg:w-60 w-40" alt="Logo" />
           </Link>
         </div>
 
-        {/* Desktop Links */}
         <ul className="lg:flex hidden gap-7">
           <Link to="/courses" className="nav-link hover:text-purple-800">
             Our Courses
@@ -74,7 +69,6 @@ const Navbar = () => {
             Company
           </Link>
           <div className="relative inline-block text-left dropdown">
-            {/* Trigger button for dropdown */}
             <button
               onClick={toggleDropdown}
               className="flex items-center justify-between  "
@@ -107,7 +101,6 @@ const Navbar = () => {
           </div>
         </ul>
 
-        {/* Contact Button & Menu Icon */}
         <div className="flex gap-5 items-center">
           <button className="bg-gradient-to-r from-[#403663] to-[#2b1f48] text-white px-5 py-3 lg:py-3 lg:px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105 items-center hidden md:flex">
             Contact
@@ -120,7 +113,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       <div
         className={`${
           isMenuOpen ? "flex" : "hidden"
